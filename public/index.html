@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Post Approve Checker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Group Post Approve Checker</h1>
+        <p>Enter the group ID to check post revision.</p>
+        <p id="loading" class="hidden">Loading...</p>
+        <div class="password-container">
+            <label for="password">Password</label>
+            <input name="password" type="password" id="password" />
+        </div>
+        <div class="groups-container">
+            <div class="groups-ids-container">
+                <textarea name="groups-ids" id="groups-ids" rows="28"></textarea>
+                <div id="buttons-container">
+                    <button type="button" id="check-button">Start check</button>
+                    <button type="button" class="disabled" id="export-button">Export</button>
+                </div>
+            </div>
+            <div class="checked-groups-ids-container">
+                <textarea id="checked-groups-ids" rows="30" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/index.js"></script>
+</html>
